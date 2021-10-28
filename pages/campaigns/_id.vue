@@ -59,7 +59,7 @@
     <div id="the-body" class="section has-background-white-ter with-arrow-down">
       <div class="container">
         <h1 class="title is-5 is-600 has-text-centered">
-          {{ $t('campaign.learnMore') }} <i class="fas fa-arrow-circle-down has-text-primary fa-2x" />
+          {{ $t('campaign.learnMore') }}
         </h1>
       </div>
     </div>
