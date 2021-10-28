@@ -7,7 +7,7 @@ WORKDIR /usr/src/nuxt-app
 # update and install dependency
 RUN apk update && apk upgrade
 RUN apk add git
-RUN apk add yarn python g++ make && rm -rf /var/cache/apk/*
+RUN apk add yarn python3 g++ make && rm -rf /var/cache/apk/*
 
 # copy the app, note .dockerignore
 COPY . /usr/src/nuxt-app/
