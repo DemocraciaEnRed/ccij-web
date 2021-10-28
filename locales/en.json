@@ -1,0 +1,75 @@
+{
+  "head": {
+    "title": "Liberation campaigns accessible to the community.",
+    "description": "Liberation campaigns accessible to the community. This website was made by the California Collaborative for Immigrant Justice with Democracia en Red"
+  },
+  "navbar": {
+    "home": "Home",
+    "campaigns": "Campaigns",
+    "faqs": "FAQs",
+    "ourWork": "Our work",
+    "contact": "Contact"
+  },
+  "footer":{
+    "ourNetworks": "Our networks",
+    "latestCampaigns": "Latest Campaigns",
+    "goToSite": "Go to site"
+  },
+  "homepage": {
+    "head": {
+      "title": "Liberation campaigns accessible to the community"
+    },
+    "title": "Liberation campaigns accessible to the community",
+    "checkOurCampaigns": "Check our campaigns",
+    "goToSite": "Go to site",
+    "campaignCarrousel": {
+      "activate": "Take action",
+      "readMore": "Read more"
+    },
+    "checkAllTheCampaigns": "Check all the campaigns",
+    "knowOurWork": "Know our work",
+    "getToKnowUs": "Get to know us" 
+  },
+  "faqs": {
+    "head": {
+      "title": "FAQ"
+    },
+    "description": "If you are in doubt about our campaigns, we invite you to read below information that will be useful to you"
+  },
+  "campaigns": {
+    "head": {
+      "title": "Campaigns"
+    },
+    "title": "Campaigns",
+    "loading": "Loading",
+    "errorOccurred": "An error occurred...",
+    "paginate": "Page {x} of {y}",
+    "next": "Next",
+    "back": "Back"
+  },
+  "campaign": {
+    "readMore": "Read more",
+    "yourVoice": "Your voice is very important to generate impact, choose how you want to help and join",
+    "whatAreYouWaiting": "What are you waiting for?",
+    "chooseTheMedium": "Choose the communication medium you prefer",
+    "activateTheCampaign": "Activate the campaign",
+    "learnMore": "Learn more about this campaign",
+    "titleSuggestion": "A suggestion before you act",
+    "readyToActivate": "Ready to activate?",
+    "doYouWantTo": "Do you want to help with this campaign?",
+    "activateCampaign": "Activate the campaign",
+    "checkOtherCampaigns": "Check other campaigns"
+  },
+  "ourWork": {
+    "head": {
+      "title": "Our work"
+    }
+  },
+  "contact": {
+    "head": {
+      "title": "Contact us"
+    }
+  }
+}
+
+

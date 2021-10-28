@@ -1,0 +1,76 @@
+{
+  "head": {
+    "title": "Campañas de liberación accesibles a la comunidad",
+    "description": "Campañas de liberación accesibles a la comunidad. Este sitio web fue creado por California Collaborative for Immigrant Justice con Democracia en Red"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "campaigns": "Campañas",
+    "faqs": "FAQs",
+    "ourWork": "Nuestro trabajo",
+    "contact": "Contacto"
+  },
+  "footer":{
+    "ourNetworks": "Nuestras redes",
+    "latestCampaigns": "Ultimas campañas",
+    "goToSite": "Ir al sitio"
+  },
+  "homepage": {
+    "head": {
+      "title": "Campañas de liberación accesibles a la comunidad"
+    },
+    "title": "Campañas de liberación accesibles a la comunidad",
+    "checkOurCampaigns": "Visitá nuestras campañas",
+    "goToSite": "Ir al sitio",
+    "campaignCarrousel": {
+      "activate": "Actuar",
+      "readMore": "Ver más"
+    },
+    "checkAllTheCampaigns": "Ver todas las campañas",
+    "knowOurWork": "Conoce nuestro trabajo",
+    "getToKnowUs": "Conocenos" 
+  },
+  "faqs": {
+    "head": {
+      "title": "FAQ"
+    },
+    "description": "Si estás en duda sobre nuestras campañas, te invitamos a leer a continuación información que te será de utilidad"
+  },
+  "campaigns": {
+    "head": {
+      "title": "Campañas"
+    },
+    "title": "Campañas",
+    "loading": "Cargando",
+    "errorOccurred": "Ocurrio un error...",
+    "paginate": "Página {x} de {y}",
+    "next": "Siguiente",
+    "back": "Atras"
+  },
+  "campaign": {
+    "readMore": "Ver mas",
+    "yourVoice": "Tu voz es muy importante para generar impacto, elige cómo quieres ayudar y únete",
+    "whatAreYouWaiting": "¿Que estas esperando?",
+    "chooseTheMedium": "Elija el medio de comunicación que prefiera",
+    "activateTheCampaign": "Activar la campaña",
+    "learnMore": "Más información acerca de la campaña",
+    "titleSuggestion": "Una sugerencia antes de activar",
+    "readyToActivate": "¿Listo para activar?",
+    "doYouWantTo": "¿Quieres ayudar con esta campaña?",
+    "activateCampaign": "Activar la campaña",
+    "checkOtherCampaigns": "Ver otras campañas"
+  },
+  "ourWork": {
+    "head": {
+      "title": "Nuestro trabajo"
+    }
+  },
+  "contact": {
+    "head": {
+      "title": "Contactanos"
+    }
+  }
+}
+
+
+

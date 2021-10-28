@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "variables";
+
+// Import Bulma
+@import "~bulma";
+// Import buefy styles
+@import "~buefy/src/scss/buefy";
+
+//==========================
+
+@mixin font-weight($weight) {
+  font-weight: $weight !important;
+}
+
+//==========================
+
+@for $i from 1 through 9 {
+  .is-#{100 * $i} {
+    @include font-weight(100 * $i)
+  }
+}
+
+.button{
+  border-radius: 0;
+}
+.box{
+  border-radius: 0;
+}
+.image.is-rounded{
+  border-radius: 999px;
+}
+
+.carousel-wrapper {
+  padding: 40px;
+}
+
+.with-arrow-down{
+  position: relative;
+}
+.with-arrow-down::after{
+  content: '';
+  position: absolute;
+  left: 49%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid whitesmoke;
+  clear: both;
+}
+
+.with-arrow-down-blue{
+  position: relative;
+}
+.with-arrow-down-blue::after{
+  content: '';
+  position: absolute;
+  left: 49%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid $light;
+  clear: both;
+}
