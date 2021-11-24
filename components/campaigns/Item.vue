@@ -15,10 +15,10 @@
         </p>
       </div>
       <div>
-        <nuxt-link :to="localePath(`/campaigns/${campaign.id}`)" class="button is-primary is-fullwidth mb-4">
+        <nuxt-link :to="localePath(`/campaigns/${campaign.id}#activate`)" class="button is-primary is-fullwidth mb-4">
           {{ $t('homepage.campaignCarrousel.activate') }}
         </nuxt-link>
-        <nuxt-link :to="localePath(`/campaigns/${campaign.id}`)" class="button is-light is-fullwidth">
+        <nuxt-link :to="localePath(`/campaigns/${campaign.id}#the-body`)" class="button is-light is-fullwidth">
           {{ $t('homepage.campaignCarrousel.readMore') }}
         </nuxt-link>
       </div>

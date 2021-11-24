@@ -4,7 +4,7 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-10">
-            <div v-if="homepage" class="box has-background-light has-text-centered has-text-primary p-6">
+            <div v-if="homepage" class="box has-background-light has-text-centered has-text-primary p-6 is-size-5">
               {{ homepage.introduction_box }}
             </div>
           </div>
