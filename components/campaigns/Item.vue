@@ -3,7 +3,7 @@
     <div class="relative-cover-container">
       <figure class="image is-3by1 cover-campaign" :style="`background-image: url('${$config.directusUrl}/assets/${campaign.image_cover.id}')`" />
       <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
-        <h1 class="title-campaign is-size-1 is-size-3-touch is-uppercase has-text-black is-800 px-5 has-text-centered is-italic">
+        <h1 class="title-campaign is-size-1 is-size-4-touch is-uppercase has-text-black is-800 px-5 has-text-centered is-italic">
           {{ campaign.translations[0].title }}
         </h1>
       </div>
