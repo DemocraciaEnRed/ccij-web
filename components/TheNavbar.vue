@@ -19,11 +19,11 @@
               {{ $t('navbar.faqs') }}
             </nuxt-link>
           </p>
-          <p class="level-item has-text-centered" :class="{'is-active': $route.name.includes('our-work')}">
+          <!-- <p class="level-item has-text-centered" :class="{'is-active': $route.name.includes('our-work')}">
             <nuxt-link :to="localePath('/our-work')" class="link is-info">
               {{ $t('navbar.ourWork') }}
             </nuxt-link>
-          </p>
+          </p> -->
           <p class="level-item has-text-centered" :class="{'is-active': $route.name.includes('contact-us')}">
             <nuxt-link :to="localePath('/contact-us')" class="link is-info">
               {{ $t('navbar.contact') }}

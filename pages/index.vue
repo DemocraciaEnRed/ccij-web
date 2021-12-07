@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="columns my-6 is-centered">
+        <!-- <div class="columns my-6 is-centered">
           <div class="column is-4">
             <h1 class="title has-text-primary has-text-centered is-800">
               {{ $t('homepage.knowOurWork') }}
@@ -79,7 +79,7 @@
               </nuxt-link>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

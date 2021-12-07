@@ -7,10 +7,10 @@
             <h1 class="title is-3">
               {{ $t('footer.ourNetworks') }}
             </h1>
-            <a href="#"><i class="fab fa-twitter fa-fw is-size-3" /></a>
-            <a href="#"><i class="fab fa-facebook-f fa-fw is-size-3" /></a>
-            <a href="#"><i class="fab fa-instagram fa-fw is-size-3" /></a>
-            <a href="#"><i class="fab fa-youtube fa-fw is-size-3" /></a>
+            <a href="https://www.facebook.com/CCIJustice"><i class="fab fa-facebook-f fa-fw is-size-3" /></a>
+            <a href="https://www.instagram.com/ccijustice/"><i class="fab fa-instagram fa-fw is-size-3" /></a>
+            <a href="https://twitter.com/ccijustice"><i class="fab fa-twitter fa-fw is-size-3" /></a>
+            <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F65597301%2Fadmin%2F"><i class="fab fa-linkedin fa-fw is-size-3" /></a>
           </div>
           <div class="column">
             <h1 class="title is-3">

@@ -17,9 +17,9 @@
   },
   "homepage": {
     "head": {
-      "title": "Liberation campaigns accessible to the community"
+      "title": "Advocacy Campaigns Accessible to Communities"
     },
-    "title": "Liberation campaigns accessible to the community",
+    "title": "Advocacy Campaigns Accessible to Communities",
     "checkOurCampaigns": "Check our campaigns",
     "goToSite": "Go to site",
     "campaignCarrousel": {
@@ -68,7 +68,10 @@
   "contact": {
     "head": {
       "title": "Contact us"
-    }
+    },
+    "title": "Interact with us on social media!",
+    "buttonQuestions": "Contact us here if you have any questions",
+    "buttonPlatform": "Contact us here if you would like your campaign to be displayed on this platform"
   }
 }
 

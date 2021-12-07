@@ -12,15 +12,15 @@
   },
   "footer":{
     "ourNetworks": "Nuestras redes",
-    "latestCampaigns": "Ultimas campañas",
+    "latestCampaigns": "Últimas campañas",
     "goToSite": "Ir al sitio"
   },
   "homepage": {
     "head": {
-      "title": "Campañas de liberación accesibles a la comunidad"
+      "title": "Campañas de acción accesibles a la comunidad"
     },
-    "title": "Campañas de liberación accesibles a la comunidad",
-    "checkOurCampaigns": "Visitá nuestras campañas",
+    "title": "Campañas de acción accesibles a la comunidad",
+    "checkOurCampaigns": "Visita nuestras campañas",
     "goToSite": "Ir al sitio",
     "campaignCarrousel": {
       "activate": "Actuar",
@@ -28,13 +28,13 @@
     },
     "checkAllTheCampaigns": "Ver todas las campañas",
     "knowOurWork": "Conoce nuestro trabajo",
-    "getToKnowUs": "Conocenos" 
+    "getToKnowUs": "Conócenos" 
   },
   "faqs": {
     "head": {
       "title": "FAQ"
     },
-    "description": "Si estás en duda sobre nuestras campañas, te invitamos a leer a continuación información que te será de utilidad"
+    "description": "Si tienes dudas sobre nuestras campañas, te invitamos a leer a continuación información que te será de utilidad"
   },
   "campaigns": {
     "head": {
@@ -68,7 +68,10 @@
   "contact": {
     "head": {
       "title": "Contactanos"
-    }
+    },
+    "title": "¡Interactúa con nosotros en redes sociales!",
+    "buttonQuestions": "Contáctanos aquí si tienes preguntas",
+    "buttonPlatform": "Contáctanos aquí si te gustaría exponer tu campaña en esta plataforma"
   }
 }
 
