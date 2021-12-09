@@ -89,6 +89,7 @@
 import CampaignCarrousel from '../components/index/CampaignCarrousel.vue'
 export default {
   name: 'HomePage',
+  layout: 'home',
   components: {
     CampaignCarrousel
   },

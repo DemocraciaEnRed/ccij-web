@@ -12,8 +12,8 @@
               <div class="is-flex-grow-1">
                 <img src="~/assets/img/ccij-logo.png" width="200" class="image">
               </div>
-              <div>
-                <a href="https://ccijustice.org/" class="button is-primary is-outlined is-fullwidth is-uppercase">{{ $t("homepage.goToSite") }}</a>
+              <div v-if="button">
+                <nuxt-link :to="localePath('/')" class="button is-primary is-outlined is-uppercase">{{ $t("homepage.goToSite") }}</nuxt-link>
               </div>
             </div>
           </div>
@@ -22,7 +22,15 @@
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  props: {
+    button: {
+      type: Boolean
+    }
+  }
+}
+</script>
 <style lang="scss" scoped>
 .picture-column{
   background-image: url('~/assets/img/takeaction-bg.png');

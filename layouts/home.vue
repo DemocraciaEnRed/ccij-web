@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheNavbar />
-    <HeroHeader :button="true"/>
+    <HeroHeader :button="false"/>
     <Nuxt />
     <TheFooter />
   </div>
