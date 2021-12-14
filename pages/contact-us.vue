@@ -22,8 +22,8 @@
          <div class="columns is-centered">
             <div class="column is-6">
               <hr>
-              <a href="https://ccijustice.org/contact-us/" class="mt-6 button is-primary is-outlined is-fullwidth is-uppercase">{{ $t('contact.buttonQuestions') }}</a>
-              <a href="https://ccijustice.org/contact-us/" class="py-2 my-4 button is-primary is-outlined is-fullwidth is-uppercase">{{ $t('contact.buttonPlatform') }}</a>
+              <a href="https://ccijustice.org/contact-us/" target="_blank" class="mt-6 button is-primary is-outlined is-fullwidth is-uppercase">{{ $t('contact.buttonQuestions') }}</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo25LzupuvnDztYyYvWWJeXKd8-WJPxs1im7AKsEapLJtGOw/viewform" target="_blank" class="py-2 my-4 button is-primary is-outlined is-fullwidth is-uppercase">{{ $t('contact.buttonPlatform') }}</a>
             </div>
           </div>
       </div>
