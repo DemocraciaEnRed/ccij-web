@@ -50,9 +50,12 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://github.com/nuxt-community/style-resources-module
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/google-analytics'
   ],
-
+  googleAnalytics: {
+    id: 'UA-216355885-1' // Used as fallback if no runtime config is provided
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/buefy
