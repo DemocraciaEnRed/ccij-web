@@ -19,7 +19,7 @@
     >
       <b-carousel-item v-for="(campaign, i) in campaigns" :key="i" icon-size="is-medium" icon-pack="fas">
         <Item :campaign="campaign" />
-        <hr class="has-background-primary mb-0">
+        <hr class="has-background-petroleo mb-0">
       </b-carousel-item>
     </b-carousel>
   </div>

@@ -4,16 +4,16 @@
       <div class="container">
         <div class="columns">
           <div class="column is-one-third has-text-centered-touch">
-            <h1 class="title is-3">
+            <h1 class="subtitle is-700 is-3 has-text-white">
               {{ $t('footer.ourNetworks') }}
             </h1>
-            <a href="https://www.facebook.com/CCIJustice"><i class="fab fa-facebook-f fa-fw is-size-3" /></a>
-            <a href="https://www.instagram.com/ccijustice/"><i class="fab fa-instagram fa-fw is-size-3" /></a>
-            <a href="https://twitter.com/ccijustice"><i class="fab fa-twitter fa-fw is-size-3" /></a>
-            <a href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F65597301%2Fadmin%2F"><i class="fab fa-linkedin fa-fw is-size-3" /></a>
+            <a class="has-text-light" href="https://www.facebook.com/CCIJustice"><i class="fab fa-facebook-f fa-fw is-size-3" /></a>
+            <a class="has-text-light" href="https://www.instagram.com/ccijustice/"><i class="fab fa-instagram fa-fw is-size-3" /></a>
+            <a class="has-text-light" href="https://twitter.com/ccijustice"><i class="fab fa-twitter fa-fw is-size-3" /></a>
+            <a class="has-text-light" href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F65597301%2Fadmin%2F"><i class="fab fa-linkedin fa-fw is-size-3" /></a>
           </div>
           <div class="column">
-            <h1 class="title is-3">
+            <h1 class="subtitle is-700 is-3 has-text-white has-text-centered-mobile">
               {{ $t('footer.latestCampaigns') }}
             </h1>
             <FooterCampaigns />
@@ -21,17 +21,18 @@
         </div>
       </div>
     </footer>
-
     <div class="py-6">
-      <div class="columns is-centered is-vcentered">
-        <div class="column is-3">
-          <a href="https://ccijustice.org/" target="_blank">
-            <img src="~/assets/img/ccij-logo.png" width="300" class="image mx-auto">
-          </a>
-        </div>
-        <div class="column is-3">
-          <div class="buttons is-centered">
-            <a href="https://ccijustice.org/" target="_blank" class="button is-primary is-outlined is-uppercase">{{ $t('footer.goToSite') }}</a>
+      <div class="container">
+        <div class="columns is-centered is-vcentered">
+          <div class="column is-7">
+            <a href="https://ccijustice.org/" target="_blank">
+              <img src="~/assets/img/ccij-logo-horizontal.svg" width="600" class="image mx-auto px-3">
+            </a>
+          </div>
+          <div class="column is-3">
+            <div class="buttons is-centered">
+              <a href="https://ccijustice.org/" target="_blank" class="button is-petroleo is-outlined is-uppercase">{{ $t('footer.goToSite') }} <i class="ml-3 fas fa-lg fa-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -50,16 +51,16 @@ export default {
 </script>
 
 <style lang="scss">
-footer.footer{
-  color: #A7BEE2;
-  .title{
-    color: #A7BEE2 !important;
-  }
-  a{
-    color: #A7BEE2;
-    &:hover{
-      color: white;
-    }
-  }
-}
+// footer.footer{
+//   color: #000;
+//   .title{
+//     color: #000 !important;
+//   }
+//   a{
+//     color: #000;
+//     &:hover{
+//       color: white;
+//     }
+//   }
+// }
 </style>

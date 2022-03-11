@@ -14,7 +14,7 @@
     </div>
   </div>
   <div v-else>
-    <p class="has-text-centered mb-3">
+    <p class="has-text-centered mb-3 has-text-primary">
       {{ $t('campaigns.paginate',{x: page, y: totalPages}) }}
     </p>
     <div class="buttons is-centered">
@@ -28,7 +28,7 @@
       <a class="button is-primary is-uppercase is-outlined" @click="prevPage"><i class="fas fa-arrow-left" />&nbsp;&nbsp;&nbsp;{{ $t('campaigns.back') }}</a>
       <a class="button is-primary is-uppercase is-outlined" @click="nextPage">{{ $t('campaigns.next') }}&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right" /></a>
     </div>
-    <p class="has-text-centered">
+    <p class="has-text-centered has-text-primary">
       {{ $t('campaigns.paginate',{x: page, y: totalPages}) }}
     </p>
   </div>

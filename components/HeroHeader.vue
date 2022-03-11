@@ -1,7 +1,20 @@
 <template>
-  <div class="has-background-primary">
-    <div class="container">
-      <div class="columns">
+  <div class="has-background-light">
+    <div class="container py-6">
+      <div class="columns is-vcentered is-centered">
+        <div class="column is-narrow">
+          <img src="~/assets/img/ccij-logo.svg" width="200" class="image mx-auto">
+        </div>
+        <div class="column is-narrow has-text-centered-mobile">
+          <h1 class="title is-1">TAKE ACTION</h1>
+          <h1 class="subtitle is-4">{{$t("homepage.title") }}</h1>
+        </div>
+        <a href="https://ccijustice.org/" class="button is-black is-outlined site-link is-hidden-mobile">{{ $t("homepage.goToSite") }} <i class="ml-3 fas fa-lg fa-arrow-right"></i></a>
+        <div class="column is-narrow has-text-centered-mobile is-hidden-tablet">
+          <a href="https://ccijustice.org/" class="button is-black is-outlined">{{ $t("homepage.goToSite") }} <i class="ml-3 fas fa-lg fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <!-- <div class="columns">
         <div class="column picture-column" />
         <div class="column is-6 has-background-white">
           <div class="p-5">
@@ -10,7 +23,6 @@
             </h1>
             <div class="is-flex is-flex-direction-row is-justify-content-space-between is-align-items-center my-4">
               <div class="is-flex-grow-1">
-                <img src="~/assets/img/ccij-logo.png" width="200" class="image">
               </div>
               <div v-if="button">
                 <nuxt-link :to="localePath('/')" class="button is-primary is-outlined is-uppercase">{{ $t("homepage.goToSite") }}</nuxt-link>
@@ -18,7 +30,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -38,6 +50,14 @@ export default {
   background-position: center center;
   @include until($tablet){
     height: 200px;
+  }
+}
+.columns{
+  position: relative;
+  .site-link{
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 </style>

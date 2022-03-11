@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="has-background-primary">
+    <div class="has-background-light">
       <div class="container">
         <div class="columns">
           <div class="column picture-column" :style="`background-image: url('${$config.directusUrl}/assets/${campaign.image_cover.id}')`" />
           <div class="column is-6 has-background-white">
             <div class="p-5">
-              <h1 class="title is-3 is-size-3 my-6">
+              <h1 class="title is-3 my-6">
                 {{ campaign.translations[0].title }}
               </h1>
               <div class="is-flex is-flex-direction-row is-justify-content-right is-align-items-center my-4">
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="section">
-      <div class="container has-text-centered">
+      <div class="container has-text-centered is-size-5">
         <p>{{ $t("campaign.yourVoice") }}</p>
         <p>{{ $t("campaign.whatAreYouWaiting") }}</p>
       </div>
@@ -30,7 +30,7 @@
         <h1 class="subtitle is-3 is-size-5-touch is-500 has-text-centered">
           {{ $t("campaign.chooseTheMedium") }}
         </h1>
-        <h1 class="title is-1 is-size-3-touch is-800 has-text-centered">
+        <h1 class="title is-1 is-size-4-touch is-800 has-text-centered">
           {{ $t("campaign.activateTheCampaign") }}
         </h1>
       </div>
@@ -42,7 +42,7 @@
             <div class="action-box is-flex is-flex-direction-column is-justify-content-space-between is-align-content-center">
               <div class="has-text-centered" style="width: 100%;">
                 <img :src="`${$config.directusUrl}/assets/${action.actions_id.icon.id}`" width="70" class="image mx-auto mb-4" alt="">
-                <h5 class="title is-5 ">
+                <h5 class="title is-5">
                   {{ action.actions_id.translations[0].name }}
                 </h5>
               </div>
@@ -58,7 +58,7 @@
     </div>
     <div id="the-body" class="section has-background-white-ter with-arrow-down">
       <div class="container">
-        <h1 class="title is-5 is-600 has-text-centered">
+        <h1 class="title is-3 is-size-4-touch has-text-centered">
           {{ $t('campaign.learnMore') }}
         </h1>
       </div>
@@ -70,12 +70,12 @@
             <img :src="`${$config.directusUrl}/assets/${campaign.image_cover.id}`" class="image mx-auto mb-5" alt="">
             <div class="content has-text-justified" v-html="campaign.translations[0].description" />
             <div class="my-6">
-              <h1 class="title is-light is-2 is-size-4-touch has-text-centered">
+              <h1 class="title is-light is-3 is-size-4-touch has-text-centered">
                 {{ $t("campaign.doYouWantTo") }}
               </h1>
               <div class="buttons is-centered">
                 <a href="#activate" class="button is-flex-grow-1 is-primary is-uppercase">{{ $t("campaign.activateCampaign") }}</a>
-                <nuxt-link :to="localePath('/campaigns')" class="button is-flex-grow-1 is-light is-uppercase">
+                <nuxt-link tag="div" :to="localePath('/campaigns')" class="button is-flex-grow-1 is-light is-uppercase">
                   {{ $t("campaign.checkOtherCampaigns") }}
                 </nuxt-link>
               </div>
@@ -221,7 +221,7 @@ export default {
 .action-box{
   padding: 1.5rem;
   height: 360px;
-  border: 1px solid #cacaca;
+  border: 1px solid #da0505;
   margin: 20px 20px;
   border-radius: 20px;
   box-shadow: none;
@@ -229,12 +229,12 @@ export default {
   transition: opacity 1s ease;
 }
 .slick-current .action-box{
-  border-color: rgb(0, 143, 209);
-  box-shadow: 0px 0px 10px rgba(0, 143, 209, 0.692);
+  border-color: #A73E24;
+  box-shadow: 0px 0px 10px #a73e2473;
 }
 .slick-current .action-box{
-  border-color: rgb(0, 143, 209);
-  box-shadow: 0px 0px 10px rgba(0, 143, 209, 0.692);
+  border-color: #A73E24;
+  box-shadow: 0px 0px 10px #a73e2473;
 }
 .slick-slide:not(.slick-current) .action-box{
   opacity: 0.6;
