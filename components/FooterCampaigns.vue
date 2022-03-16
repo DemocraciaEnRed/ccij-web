@@ -6,8 +6,8 @@
     An error occurred :(
   </p>
   <div v-else class="columns is-multiline">
-    <div v-for="campaign in campaigns" :key="`campaign-${campaign.campaigns_id.id}`" class="column is-4">
-      <nuxt-link :to="localePath(`/campaigns/${campaign.campaigns_id.id}`)">
+    <div v-for="campaign in campaigns" :key="`campaign-${campaign.campaigns_id.id}`" class="column is-4 has-text-centered-mobile">
+      <nuxt-link class="has-text-white" :to="localePath(`/campaigns/${campaign.campaigns_id.id}`)">
         {{ campaign.title }}
       </nuxt-link>
     </div>

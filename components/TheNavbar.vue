@@ -4,17 +4,17 @@
     <div class="section is-hidden-touch">
       <div class="container">
         <nav class="level">
-          <p class="level-item has-text-centered" :class="{'is-active': $route.name.includes('index')}">
+          <p class="level-item is-size-5 is-oswald has-text-centered" :class="{'is-active': $route.name.includes('index')}">
             <nuxt-link :to="localePath('/')" class="link is-info">
               {{ $t('navbar.home') }}
             </nuxt-link>
           </p>
-          <p class="level-item has-text-centered" :class="{'is-active': $route.name.includes('campaign')}">
+          <p class="level-item is-size-5 is-oswald has-text-centered" :class="{'is-active': $route.name.includes('campaign')}">
             <nuxt-link :to="localePath('/campaigns')" class="link is-info">
               {{ $t('navbar.campaigns') }}
             </nuxt-link>
           </p>
-          <p class="level-item has-text-centered" :class="{'is-active': $route.name.includes('faq')}">
+          <p class="level-item is-size-5 is-oswald has-text-centered" :class="{'is-active': $route.name.includes('faq')}">
             <nuxt-link :to="localePath('/faq')" class="link is-info">
               {{ $t('navbar.faqs') }}
             </nuxt-link>
@@ -24,12 +24,12 @@
               {{ $t('navbar.ourWork') }}
             </nuxt-link>
           </p> -->
-          <p class="level-item has-text-centered" :class="{'is-active': $route.name.includes('contact-us')}">
+          <p class="level-item is-size-5 is-oswald has-text-centered" :class="{'is-active': $route.name.includes('contact-us')}">
             <nuxt-link :to="localePath('/contact-us')" class="link is-info">
               {{ $t('navbar.contact') }}
             </nuxt-link>
           </p>
-          <p class="level-item has-text-centered">
+          <p class="level-item is-size-5 is-oswald has-text-centered">
             <nuxt-link v-if="$i18n.locale == 'en'" class="link is-info" :to="switchLocalePath('es')">
               🇪🇸 Español
             </nuxt-link>
@@ -53,28 +53,28 @@
         </b-navbar-item>
       </template>
       <template #start>
-        <b-navbar-item tag="nuxt-link" :to="{ path: localePath('/') }">
+        <b-navbar-item tag="nuxt-link" class="is-oswald" :to="{ path: localePath('/') }">
           {{ $t('navbar.home') }}
         </b-navbar-item>
-        <b-navbar-item tag="nuxt-link" :to="{ path: localePath('/campaigns') }">
+        <b-navbar-item tag="nuxt-link" class="is-oswald" :to="{ path: localePath('/campaigns') }">
           {{ $t('navbar.campaigns') }}
         </b-navbar-item>
-        <b-navbar-item tag="nuxt-link" :to="{ path: localePath('/faq') }">
+        <b-navbar-item tag="nuxt-link" class="is-oswald" :to="{ path: localePath('/faq') }">
           {{ $t('navbar.faqs') }}
         </b-navbar-item>
-        <b-navbar-item tag="nuxt-link" :to="{ path: localePath('/our-work') }">
+        <b-navbar-item tag="nuxt-link" class="is-oswald" :to="{ path: localePath('/our-work') }">
           {{ $t('navbar.ourWork') }}
         </b-navbar-item>
-        <b-navbar-item tag="nuxt-link" :to="{ path: localePath('/contact-us') }">
+        <b-navbar-item tag="nuxt-link" class="is-oswald" :to="{ path: localePath('/contact-us') }">
           {{ $t('navbar.contact') }}
         </b-navbar-item>
       </template>
 
       <template #end>
-        <b-navbar-item v-if="$i18n.locale == 'en'" tag="nuxt-link" :to="switchLocalePath('es')">
+        <b-navbar-item v-if="$i18n.locale == 'en'" class="is-oswald" tag="nuxt-link" :to="switchLocalePath('es')">
           🇪🇸 Español
         </b-navbar-item>
-        <b-navbar-item v-else tag="nuxt-link" :to="switchLocalePath('en')">
+        <b-navbar-item v-else tag="nuxt-link" class="is-oswald"  :to="switchLocalePath('en')">
           🇺🇸 English
         </b-navbar-item>
       </template>
@@ -95,13 +95,14 @@ export default {
 <style lang="scss" scoped>
 .level-item {
   a {
-    font-weight: 600;
+    font-weight: 400;
     &:hover{
-      color: #9AB5DE
+      color: #731012;
     }
   }
   &.is-active a{
-    color: #9AB5DE;
+    font-weight: 600;
+    color: #731012;
   }
 }
 </style>

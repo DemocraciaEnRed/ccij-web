@@ -1,7 +1,7 @@
 {
   "head": {
-    "title": "Campañas de liberación accesibles a la comunidad",
-    "description": "Campañas de liberación accesibles a la comunidad. Este sitio web fue creado por California Collaborative for Immigrant Justice con Democracia en Red"
+    "title": "Campañas de acción accesibles a la comunidad",
+    "description": "Campañas de acción accesibles a la comunidad. Este sitio web fue creado por California Collaborative for Immigrant Justice con Democracia en Red"
   },
   "navbar": {
     "home": "Inicio",
@@ -13,13 +13,14 @@
   "footer":{
     "ourNetworks": "Nuestras redes",
     "latestCampaigns": "Últimas campañas",
-    "goToSite": "Inicio"
+    "goToSite": "Ve al sitio "
   },
   "homepage": {
     "head": {
-      "title": "Campañas de acción accesibles a la comunidad"
+      "title": "Campañas de acción"
     },
-    "title": "Campañas de acción accesibles a la comunidad",
+    "title": "Campañas de acción",
+    "subtitle": "Accesibles a la comunidad",
     "checkOurCampaigns": "Visita nuestras campañas",
     "goToSite": "Ir al sitio",
     "campaignCarrousel": {
@@ -67,7 +68,7 @@
   },
   "contact": {
     "head": {
-      "title": "Contactanos"
+      "title": "Contáctanos"
     },
     "title": "¡Interactúa con nosotros en redes sociales!",
     "buttonQuestions": "Contáctanos aquí si tienes preguntas",

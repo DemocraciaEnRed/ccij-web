@@ -1,25 +1,51 @@
 // Import bulma styles
 @import "~bulma/sass/utilities/_all";
 
-$primary: #182758;
+$primary: #A73E24;
 $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
-$light: #E4EEFA;
+
+$light: #FFDFBB;
 $light-light: findLightColor($light);
 $light-dark: findDarkColor($light);
 $light-invert: findColorInvert($light);
-$link: #182758;
+
+$link: #A73E24;
 $link-light: findLightColor($link);
 $link-dark: findDarkColor($link);
 $link-invert: findColorInvert($link);
 
 $text: $black;
 
-$family-primary: 'Raleway', $family-sans-serif;
-
+$family-primary: 'Montserrat', $family-sans-serif;
+$weight-normal: 400;
 // Lists and maps
-$custom-colors: null !default;
+// $custom-colors: null !default;
+
+$petroleo: #31595E;
+$petroleo-light: findLightColor($petroleo);
+$petroleo-dark: findDarkColor($petroleo);
+$petroleo-invert: findColorInvert($petroleo);
+$gris: #EEEEEE;
+$gris-light: findLightColor($gris);
+$gris-dark: findDarkColor($gris);
+$gris-invert: findColorInvert($gris);
+
+$custom-colors: (
+    "petroleo": (
+        $petroleo,
+        $petroleo-light,
+        $petroleo-dark,
+        $petroleo-invert
+    ),
+    "gris": (
+        $gris,
+        $gris-light,
+        $gris-dark,
+        $gris-invert
+    ),
+);
 $custom-shades: null !default;
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
@@ -81,6 +107,16 @@ $colors: mergeColorMaps(
     $custom-colors
 );
 
-$title-color: $primary;
-$title-weight: 700;
-$subtitle-color: $primary;
+$title-color: $black;
+$title-family: 'Paytone One', $family-sans-serif;
+// $title-weight: 700;
+// $subtitle-color: $primary;
+$subtitle-family: 'Oswald', $family-sans-serif;
+
+$button-family: 'Oswald', $family-sans-serif;
+$button-padding-horizontal: 2em;
+
+$carousel-indicator-color: $petroleo;
+$carousel-arrow-color: $petroleo;
+
+$footer-padding: 3rem 1.5rem;

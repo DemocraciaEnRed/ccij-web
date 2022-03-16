@@ -5,10 +5,10 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-8">
-            <h1 class="title is-3 has-text-centered">
+            <h1 class="title is-3 has-text-centered has-text-primary">
               FAQs
             </h1>
-            <p class="has-text-centered">
+            <p class="has-text-centered has-text-grey">
               {{ $t('faqs.description') }}
             </p>
             <hr>
@@ -73,17 +73,17 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
-  color: #A7BEE2;
-  font-weight: 700;
-}
-// .semi-primary-color {
-//   color: ##A7BEE2;
+<style lang="scss" scoped>
+// .content h1,
+// .content h2,
+// .content h3,
+// .content h4,
+// .content h5,
+// .content h6 {
+//   color: #A7BEE2;
+//   font-weight: 700;
 // }
+// // .semi-primary-color {
+// //   color: ##A7BEE2;
+// // }
 </style>

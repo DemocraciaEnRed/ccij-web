@@ -2,26 +2,37 @@
   <div>
     <div class="section">
       <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-10">
-            <div v-if="homepage" class="box has-background-light has-text-centered has-text-primary p-6 is-size-5">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div v-if="homepage" class="box has-background-primary is-shadowless has-text-centered p-6">
+            <h1 class="subtitle is-4 has-text-white">
               {{ homepage.introduction_box }}
-            </div>
+            </h1>
           </div>
         </div>
+      </div>
+        <!-- <div class="columns is-centered mb-0">
+          <div class="column is-10">
+          </div>
+        </div> -->
       </div>
     </div>
     <div class="section py-5 has-background-light">
       <div class="container">
-        <h1 class="title is-1 is-800 has-text-centered">
-          {{ $t("homepage.checkOurCampaigns") }}
-        </h1>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <h1 class="title is-1 is-800 has-text-centered">
+              {{ $t("homepage.checkOurCampaigns") }}
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="with-arrow-down-light"/>
     <div class="section">
       <div class="container">
         <div class="columns is-centered">
-          <div class="column is-10">
+          <div class="column is-8">
             <CampaignCarrousel />
           </div>
         </div>
@@ -32,7 +43,7 @@
         <div class="columns is-centered">
           <div class="column is-4">
             <div class="buttons is-centered">
-              <nuxt-link :to="localePath('/campaigns')" class="button is-primary is-outlined is-uppercase">
+              <nuxt-link tag="div" :to="localePath('/campaigns')" class="button is-petroleo is-medium is-outlined is-uppercase">
                 {{ $t('homepage.checkAllTheCampaigns') }}
               </nuxt-link>
             </div>
@@ -42,7 +53,7 @@
     </div>
     <div class="section">
       <div class="container">
-        <h1 class="title has-text-grey has-text-centered is-800">
+        <h1 class="title has-text-primary has-text-centered is-800">
           {{ homepage.about_title }}
         </h1>
         <div class="columns my-6 is-centered">
@@ -89,10 +100,10 @@
 import CampaignCarrousel from '../components/index/CampaignCarrousel.vue'
 export default {
   name: 'HomePage',
-  layout: 'home',
   components: {
     CampaignCarrousel
   },
+  layout: 'home',
   async asyncData ({ params, $axios, i18n }) {
     const theQuery = {
       query: `
