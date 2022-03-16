@@ -17,16 +17,17 @@
   },
   "homepage": {
     "head": {
-      "title": "Advocacy Campaigns Accessible to Communities"
+      "title": "Liberation Campaigns Accessible to Communities"
     },
-    "title": "Advocacy Campaigns Accessible to Communities",
-    "checkOurCampaigns": "Check our campaigns",
+    "title": "Liberation Campaigns",
+    "subtitle": "Accessible to the Community",
+    "checkOurCampaigns": "Check out our campaigns",
     "goToSite": "Go to site",
     "campaignCarrousel": {
       "activate": "Take action",
       "readMore": "Read more"
     },
-    "checkAllTheCampaigns": "Check all the campaigns",
+    "checkAllTheCampaigns": "Access all campaigns here",
     "knowOurWork": "Know our work",
     "getToKnowUs": "Get to know us" 
   },
@@ -34,7 +35,7 @@
     "head": {
       "title": "FAQ"
     },
-    "description": "If you are in doubt about our campaigns, we invite you to read below information that will be useful to you"
+    "description": "If you have questions about our campaigns or platform, please read the information below."
   },
   "campaigns": {
     "head": {

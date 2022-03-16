@@ -1,13 +1,13 @@
 <template>
-  <div class="has-background-light">
+  <div class="has-custom-bg">
     <div class="container py-6">
-      <div class="columns is-vcentered is-centered">
+      <div class="columns is-align-items-end is-centered">
         <div class="column is-narrow">
-          <img src="~/assets/img/ccij-logo.svg" width="200" class="image mx-auto">
+          <img src="~/assets/img/takeAction.svg" width="200" class="image mx-auto">
         </div>
-        <div class="column is-narrow has-text-centered-mobile">
-          <h1 class="title is-1">TAKE ACTION</h1>
-          <h1 class="subtitle is-4">{{$t("homepage.title") }}</h1>
+        <div class="column is-narrow has-text-centered-mobile has-text-right">
+          <h1 class="subtitle is-4 is-500 is-marginless has-text-primary">{{$t("homepage.title") }}</h1>
+          <h1 class="subtitle is-4 is-500 is-marginless">{{$t("homepage.subtitle") }}</h1>
         </div>
         <a href="https://ccijustice.org/" class="button is-black is-outlined site-link is-hidden-mobile">{{ $t("homepage.goToSite") }} <i class="ml-3 fas fa-lg fa-arrow-right"></i></a>
         <div class="column is-narrow has-text-centered-mobile is-hidden-tablet">
@@ -51,6 +51,11 @@ export default {
   @include until($tablet){
     height: 200px;
   }
+}
+.has-custom-bg{
+  background-image: url('~/assets/img/fondoBanner.svg');
+  background-size: cover;
+  background-position: center center;
 }
 .columns{
   position: relative;
