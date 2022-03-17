@@ -69,7 +69,7 @@ export default {
             translations(filter: {languages_code: { id: {_eq: "${this.$i18n.locale}"}}}, limit: 1){
               title
               short_description
-          }
+            }
           }
         }
       `
