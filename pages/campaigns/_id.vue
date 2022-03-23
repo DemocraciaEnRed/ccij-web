@@ -41,13 +41,13 @@
           <div v-for="(action,i) in campaign.actions" :key="`campaign-${campaign.id}-action-${i}`">
             <div class="action-box is-flex is-flex-direction-column is-justify-content-space-between is-align-content-center">
               <div class="has-text-centered" style="width: 100%;">
-                <img :src="`${$config.directusUrl}/assets/${action.actions_id.icon.id}`" width="70" class="image mx-auto mb-4" alt="">
-                <h5 class="title is-5">
+                <img :src="`${$config.directusUrl}/assets/${action.actions_id.icon.id}`" width="70" class="image mx-auto mb-3" alt="">
+                <h5 class="title is-6">
                   {{ action.actions_id.translations[0].name }}
                 </h5>
               </div>
               <div class="has-text-centered" style="width: 100%;">
-                <p>{{ action.translations[0].description }}</p>
+                <p class="is-size-7">{{ action.translations[0].description }}</p>
               </div>
               <a v-if="!action.translations[0].suggested_text" :href="action.translations[0].call_to_action_url" target="_blank" class="button is-primary is-outlined is-uppercase is-fullwidth">{{ action.translations[0].call_to_action_label }}</a>
               <a v-else target="_blank" class="button is-primary is-outlined is-uppercase is-fullwidth" @click="openModal(action)">{{ action.translations[0].call_to_action_label }}</a>
@@ -220,13 +220,17 @@ export default {
 <style lang="scss" scoped>
 .action-box{
   padding: 1.5rem;
-  height: 360px;
+  height: 400px;
   border: 1px solid #da0505;
   margin: 20px 20px;
   border-radius: 20px;
   box-shadow: none;
   transition: box-shadow 1s ease;
   transition: opacity 1s ease;
+}
+.action-box .button{
+  white-space: normal;
+  height: auto;
 }
 .slick-current .action-box{
   border-color: #A73E24;
