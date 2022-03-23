@@ -9,10 +9,10 @@
           <h1 class="subtitle is-4 is-500 is-marginless has-text-primary">{{$t("homepage.title") }}</h1>
           <h1 class="subtitle is-4 is-500 is-marginless">{{$t("homepage.subtitle") }}</h1>
         </div>
-        <a href="https://ccijustice.org/" class="button is-black is-outlined site-link is-hidden-mobile">{{ $t("homepage.goToSite") }} <i class="ml-3 fas fa-lg fa-arrow-right"></i></a>
+        <!-- <a href="https://ccijustice.org/" class="button is-black is-outlined site-link is-hidden-mobile">{{ $t("homepage.goToSite") }} <i class="ml-3 fas fa-lg fa-arrow-right"></i></a>
         <div class="column is-narrow has-text-centered-mobile is-hidden-tablet">
           <a href="https://ccijustice.org/" class="button is-black is-outlined">{{ $t("homepage.goToSite") }} <i class="ml-3 fas fa-lg fa-arrow-right"></i></a>
-        </div>
+        </div> -->
       </div>
       <!-- <div class="columns">
         <div class="column picture-column" />
