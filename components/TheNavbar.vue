@@ -31,17 +31,11 @@
           </p>
           <p class="level-item is-size-5 is-oswald has-text-centered">
             <nuxt-link v-if="$i18n.locale == 'en'" class="link is-info" :to="switchLocalePath('es')">
-              🇪🇸 Español
+              Español
             </nuxt-link>
             <nuxt-link v-else class="link is-info" :to="switchLocalePath('en')">
-              🇺🇸 English
+              English
             </nuxt-link>
-            <!-- <a
-              href="#"
-              v-for="locale in availableLocales"
-              :key="locale.code"
-              @click.prevent.stop="$i18n.setLocale(locale.code)">{{ locale.name }}</a>
-            <a class="link is-info">🇪🇸 Español</a> -->
           </p>
         </nav>
       </div>
@@ -62,9 +56,9 @@
         <b-navbar-item tag="nuxt-link" class="is-oswald" :to="{ path: localePath('/faq') }">
           {{ $t('navbar.faqs') }}
         </b-navbar-item>
-        <b-navbar-item tag="nuxt-link" class="is-oswald" :to="{ path: localePath('/our-work') }">
+        <!-- <b-navbar-item tag="nuxt-link" class="is-oswald" :to="{ path: localePath('/our-work') }">
           {{ $t('navbar.ourWork') }}
-        </b-navbar-item>
+        </b-navbar-item> -->
         <b-navbar-item tag="nuxt-link" class="is-oswald" :to="{ path: localePath('/contact-us') }">
           {{ $t('navbar.contact') }}
         </b-navbar-item>
@@ -72,10 +66,10 @@
 
       <template #end>
         <b-navbar-item v-if="$i18n.locale == 'en'" class="is-oswald" tag="nuxt-link" :to="switchLocalePath('es')">
-          🇪🇸 Español
+          Español
         </b-navbar-item>
-        <b-navbar-item v-else tag="nuxt-link" class="is-oswald"  :to="switchLocalePath('en')">
-          🇺🇸 English
+        <b-navbar-item v-else tag="nuxt-link" class="is-oswald" :to="switchLocalePath('en')">
+          English
         </b-navbar-item>
       </template>
     </b-navbar>
