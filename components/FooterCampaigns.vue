@@ -38,7 +38,7 @@ export default {
     const theQuery = {
       query: `
         {
-          campaigns(limit: 6, sort: ["-id","-date_updated"]) {
+          campaigns(filter: {status: {_eq: "published"}}, limit: 6, sort: ["-id","-date_updated"]) {
             id
             translations(filter: {languages_code: { id: {_eq: "${this.$i18n.locale}"}}}, limit: 1){
               title

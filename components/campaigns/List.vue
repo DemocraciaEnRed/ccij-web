@@ -59,7 +59,7 @@ export default {
               id
             }
           }
-          campaigns(page:${this.page}, limit: ${this.limit}, sort: ["-id","-date_updated"]) {
+          campaigns(filter: {status: {_eq: "published"}}, page:${this.page}, limit: ${this.limit}, sort: ["-id","-date_updated"]) {
             id
             name
             date_updated

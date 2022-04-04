@@ -8,7 +8,7 @@
         alt=""
       >
       <h5 class="title is-3 has-text-centered">
-        {{ action.actions_id.translations[0].name }}
+        {{ action.translations[0].title }}
       </h5>
       <h1 class="subtitle is-5">
         {{ $t('campaign.titleSuggestion') }}
@@ -20,7 +20,7 @@
         {{ $t('campaign.readyToActivate') }}
       </h1>
       <div class="buttons">
-        <a :href="action.translations[0].call_to_action_url" target="_blank" class="button is-primary is-outlined is-fullwidth" @click="$parent.close()">{{ action.translations[0].call_to_action_label }}</a>
+        <a target="_blank" class="button is-primary is-outlined is-fullwidth" @click="openURL(action.translations[0].call_to_action_url)">{{ action.translations[0].call_to_action_label }}</a>
       </div>
     </section>
   </div>
@@ -29,9 +29,20 @@
 <script>
 export default {
   props: {
+    gaEvent: {
+      type: Object,
+      required: true
+    },
     action: {
       type: Object,
       required: true
+    }
+  },
+  methods: {
+    openURL (url) {
+      this.$ga.event(this.gaEvent)
+      this.$parent.close()
+      window.open(url, '_blank')
     }
   }
 }

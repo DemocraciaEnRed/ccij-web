@@ -43,13 +43,15 @@
               <div class="has-text-centered" style="width: 100%;">
                 <img :src="`${$config.directusUrl}/assets/${action.actions_id.icon.id}`" width="70" class="image mx-auto mb-3" alt="">
                 <h5 class="title is-6">
-                  {{ action.actions_id.translations[0].name }}
+                  {{ action.translations[0].title }}
                 </h5>
               </div>
               <div class="has-text-centered" style="width: 100%;">
-                <p class="is-size-7">{{ action.translations[0].description }}</p>
+                <p class="is-size-7">
+                  {{ action.translations[0].description }}
+                </p>
               </div>
-              <a v-if="!action.translations[0].suggested_text" :href="action.translations[0].call_to_action_url" target="_blank" class="button is-primary is-outlined is-uppercase is-fullwidth">{{ action.translations[0].call_to_action_label }}</a>
+              <a v-if="!action.translations[0].suggested_text" target="_blank" class="button is-primary is-outlined is-uppercase is-fullwidth" @click="openURL(action, action.translations[0].call_to_action_url)">{{ action.translations[0].call_to_action_label }}</a>
               <a v-else target="_blank" class="button is-primary is-outlined is-uppercase is-fullwidth" @click="openModal(action)">{{ action.translations[0].call_to_action_label }}</a>
             </div>
           </div>
@@ -91,11 +93,13 @@
 import SuggestionModal from '@/components/campaign/SuggestionModal.vue'
 export default {
   layout: 'campaign',
-  async asyncData ({ params, $axios, i18n }) {
+  async asyncData ({ params, $axios, i18n, $router }) {
     const theQuery = {
       query: `
       {
         campaigns_by_id (id:${params.id}){
+          id
+          status
           image_cover {
             id
           }
@@ -106,6 +110,7 @@ export default {
           }
           actions{
             actions_id {
+              name
               icon {
                 id
               }
@@ -114,6 +119,7 @@ export default {
               }
             }
             translations (filter: {languages_code: {id: { _eq: "${i18n.locale}"}}}) {
+              title
               description
               call_to_action_url
               call_to_action_label
@@ -126,11 +132,15 @@ export default {
     }
     try {
       const response = await $axios.post('/graphql', theQuery)
+      // if status is not published, redirect to home
+      // if (response.data.data.campaigns_by_id.status !== 'published') {
+      //   $router.push('/')
+      // }
       return {
         campaign: response.data.data.campaigns_by_id
       }
     } catch (err) {
-      // eslint-disable-next-line no-console
+      // eslint-disable-nex t-line no-console
       console.error(err.response.data.errors[0].extensions)
     }
   },
@@ -198,17 +208,49 @@ export default {
       ]
     }
   },
+  beforeMount () {
+    console.log(this.campaign.status)
+  },
   methods: {
+    // convert a string to slug
+    slugify (text) {
+      return text.toString().toLowerCase()
+        .replace(/\s+/g, '-') // Replace spaces with -
+        // eslint-disable-next-line no-useless-escape
+        .replace(/[^\w\-]+/g, '') // Remove all non-word chars
+        // eslint-disable-next-line no-useless-escape
+        .replace(/\-\-+/g, '-') // Replace multiple - with single -
+        .replace(/^-+/, '') // Trim - from start of text
+        .replace(/-+$/, '') // Trim - from end of text
+    },
     info (value) {
       this.test = value
     },
+    openURL (action, url) {
+      const actionSlug = this.slugify(action.actions_id.name)
+      const gaEvent = {
+        eventCategory: `actions-campaign-${this.campaign.id}`,
+        eventAction: actionSlug,
+        eventLabel: action.translations[0].call_to_action_label
+      }
+      console.log(gaEvent)
+      this.$ga.event(gaEvent)
+      window.open(url, '_blank')
+    },
     openModal (action) {
+      const actionSlug = this.slugify(action.actions_id.name)
+      const gaEvent = {
+        eventCategory: `actions-campaign-${this.campaign.id}`,
+        eventAction: actionSlug,
+        eventLabel: action.translations[0].call_to_action_label
+      }
       this.$buefy.modal.open({
         parent: this,
         component: SuggestionModal,
         hasModalCard: true,
         props: {
-          action
+          action,
+          gaEvent
         },
         trapFocus: true
       })

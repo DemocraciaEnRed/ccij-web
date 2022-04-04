@@ -41,7 +41,7 @@ export default {
     const theQuery = {
       query: `
         {
-          campaigns(limit: 4, sort: ["-id","-date_updated"]) {
+          campaigns(filter: {status: {_eq: "published"}}, limit: 4, sort: ["-id","-date_updated"]) {
             id
             name
             image_cover {
