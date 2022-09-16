@@ -2,15 +2,15 @@
   <div>
     <div class="section">
       <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-8">
-          <div v-if="homepage" class="box has-background-primary is-shadowless has-text-centered p-6">
-            <h1 class="subtitle is-4 has-text-white">
-              {{ homepage.introduction_box }}
-            </h1>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div v-if="homepage" class="box has-background-primary is-shadowless has-text-centered p-6">
+              <h1 class="subtitle is-4 is-size-5-touch has-text-white">
+                {{ homepage.introduction_box }}
+              </h1>
+            </div>
           </div>
         </div>
-      </div>
         <!-- <div class="columns is-centered mb-0">
           <div class="column is-10">
           </div>
@@ -21,7 +21,7 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column is-8">
-            <h1 class="title is-1 is-800 has-text-centered">
+            <h1 class="title is-1 is-size-3-touch is-800 has-text-centered">
               {{ $t("homepage.checkOurCampaigns") }}
             </h1>
           </div>
