@@ -108,7 +108,7 @@ export default {
             short_description
             description
           }
-          actions{
+          actions (sort: ["sort"]){
             actions_id {
               name
               icon {
