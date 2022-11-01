@@ -14,10 +14,10 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { property: 'og:type', content: 'website' },
       { property: 'og:url', content: 'https://takeaction.ccijustice.org/' },
-      { property: 'og:image', content: 'https://takeaction.ccijustice.org/sharer_02.jpg' },
+      { property: 'og:image', content: 'https://takeaction.ccijustice.org/sharer_03.jpg' },
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:url', content: 'https://takeaction.ccijustice.org/' },
-      { property: 'twitter:image', content: 'https://takeaction.ccijustice.org/sharer_02.jpg' }
+      { property: 'twitter:image', content: 'https://takeaction.ccijustice.org/sharer_03.jpg' }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css', integrity: 'sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==', crossorigin: 'anonymous', referrerpolicy: 'no-referrer' },
