@@ -54,7 +54,7 @@ export default {
     const theQuery = {
       query: `
         {
-          campaigns_aggregated {
+          campaigns_aggregated(filter: {status: {_eq: "published"}}) {
             count {
               id
             }
@@ -76,9 +76,10 @@ export default {
     }
     this.$axios.post('/graphql', theQuery)
       .then((response) => {
+        console.log(response.data.data)
         this.campaigns = response.data.data.campaigns
         this.totalItems = response.data.data.campaigns_aggregated[0].count.id
-        this.totalPages = Math.ceil(this.totalItems / this.limit) || 1
+        this.totalPages = Math.ceil(this.totalItems / this.limit)
       })
       .catch((err) => {
         // eslint-disable-next-line no-console
