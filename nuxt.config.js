@@ -51,10 +51,10 @@ export default {
     '@nuxtjs/eslint-module',
     // https://github.com/nuxt-community/style-resources-module
     '@nuxtjs/style-resources',
-    '@nuxtjs/google-analytics'
+    //'@nuxtjs/google-analytics'
   ],
-  googleAnalytics: {
-    id: 'UA-216355885-1' // Used as fallback if no runtime config is provided
+  'google-gtag': {
+    id: 'G-J5Y0ZNQPKV', // Used as fallback if no runtime config is provided,
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -63,7 +63,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://i18n.nuxtjs.org/setup
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxtjs/google-gtag'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
