@@ -228,21 +228,19 @@ export default {
     },
     openURL (action, url) {
       const actionSlug = this.slugify(action.actions_id.name)
-      const gaEvent = {
-        eventCategory: `actions-campaign-${this.campaign.id}`,
-        eventAction: actionSlug,
-        eventLabel: action.translations[0].call_to_action_label
+      const gaEventParams = {
+        event_category: `actions-campaign-${this.campaign.id}`,
+        event_label: action.translations[0].call_to_action_label
       }
-      console.log(gaEvent)
-      this.$ga.event(gaEvent)
+      this.$gtag('event', actionSlug, gaEventParams)
       window.open(url, '_blank')
     },
     openModal (action) {
       const actionSlug = this.slugify(action.actions_id.name)
       const gaEvent = {
-        eventCategory: `actions-campaign-${this.campaign.id}`,
-        eventAction: actionSlug,
-        eventLabel: action.translations[0].call_to_action_label
+        event_category: `actions-campaign-${this.campaign.id}`,
+        event_action: actionSlug,
+        event_label: action.translations[0].call_to_action_label
       }
       this.$buefy.modal.open({
         parent: this,

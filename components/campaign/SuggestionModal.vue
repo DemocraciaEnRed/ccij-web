@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     openURL (url) {
-      this.$ga.event(this.gaEvent)
+      this.$gtag('event', this.gaEvent.event_action, { event_category: this.gaEvent.event_category, event_label: this.gaEvent.event_label })
       this.$parent.close()
       window.open(url, '_blank')
     }

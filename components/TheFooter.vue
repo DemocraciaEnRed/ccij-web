@@ -49,7 +49,10 @@ export default {
   },
   methods: {
     trackAndGoToWebsite (url, where) {
-      this.$ga.event('Footer', 'Click', where)
+      this.$gtag('event', 'Footer', {
+        event_category: 'Go to website',
+        event_label: where
+      })
       // open in a new tab https://ccijustice.org/
       window.open(url, '_blank')
     }
